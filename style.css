@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost&family=Raleway&display=swap");
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Content */
+body h3 {
+  font-family: "Jost";
+}
+body h5 {
+  font-family: "Jost";
+}
+body p {
+  font-family: "Jost", Arial, Helvetica, sans-serif;
+}
+
+/* Landing */
+.subtitle {
+  font-size: 18px;
+  color: #987750;
+}
+
+.title {
+  font-size: 48px;
+  border-bottom: 100px;
+  border-color: #dddddd;
+}
+
+/* About */
+
+/* Portfolio */
+
+/* Testimonial */
+
+/* Contact */
+label {
+  margin: 20px 0;
+  position: relative;
+  display: inline-block;
+}
+
+span {
+  padding: 10px;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.2s;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  opacity: 0.5;
+}
+
+input {
+  padding: 10px;
+}
+
+input:focus + span,
+input:not(:placeholder-shown) + span {
+  opacity: 1;
+  transform: scale(0.75) translateY(-100%) translateX(-30px);
+}
+#message {
+  height: 150px;
+  width: 100%;
+  border: 1px solid #ced4da;
+}
