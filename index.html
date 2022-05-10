@@ -10,147 +10,172 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./style.css" />
     <title>Mock Portfolio</title>
   </head>
-  <body style="overflow-x: hidden">
+  <body style="overflow-x: hidden" class="bg-dark">
     <main>
       <div class="container-fluid">
-        <!-- Offcanvas -->
-        <button
-          class="btn btn-primary"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasWithBothOptions"
-          aria-controls="offcanvasWithBothOptions"
-        >
-          Enable both scrolling & backdrop
-        </button>
-        <div
-          class="offcanvas offcanvas-start"
-          data-bs-scroll="true"
-          tabindex="-1"
-          id="offcanvasWithBothOptions"
-          aria-labelledby="offcanvasWithBothOptionsLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-              Backdrop with scrolling
-            </h5>
-            <button
-              type="button"
-              class="btn-close text-reset"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body">
-            <p>
-              Try scrolling the rest of the page to see this option in action.
-            </p>
-          </div>
-        </div>
-        <!-- Offcanvas end -->
+            <div class="row">
 
-        <!-- Main content -->
-        <div class="col-md-6">
-          <!-- Landing -->
-          <section class="min-vh-100 min-vw-70 bg-dark text-light" id="landing">
-            <div class="container-fluid">
-              <h3 class="subtitle">Introduction</h3>
-              <h3 class="title">Aspiring Full-Stack Developer</h3>
-            </div>
-          </section>
-          <!-- Landing ends -->
+            <!-- Main content -->
+            <div class="col-md-8">
 
-          <!-- About -->
-          <section class="min-vh-100 min-vw-70 bg-dark text-light" id="about">
-            <div class="container-fluid"></div>
-          </section>
-          <section
-            class="min-vh-100 min-vw-70 bg-light text-dark"
-            id="portfolio"
-          >
-            <div class="container-fluid">fbvuisdiofbkhafvb</div>
-          </section>
-          <!-- About ends -->
+            <!-- Landing -->
+            <section class="min-vh-100 min-vw-70 bg-dark text-light" id="landing">
+                <div class="container-fluid">
+                <h3 class="subtitle">Introduction</h3>
+                <h3 class="title">Aspiring Full-Stack Developer</h3>
+                </div>
+            </section>
+            <!-- Landing ends -->
 
-          <!-- Testimonial -->
-          <section
-            class="min-vh-100 min-vw-70 bg-dark text-light"
-            id="testimonial"
-          >
-            <div class="container-fluid">fbvuisdiofbkhafvb</div>
-          </section>
-          <!-- Testimonial ends -->
+            <!-- About -->
+            <section class="min-vh-100 min-vw-70 bg-dark text-light" id="about">
+                <div class="container-fluid"></div>
+            </section>
+            <section
+                class="min-vh-100 min-vw-70 bg-light text-dark"
+                id="portfolio"
+            >
+                <div class="container-fluid">fbvuisdiofbkhafvb</div>
+            </section>
+            <!-- About ends -->
 
-          <!-- Contact -->
-          <section class="min-vh-100 min-vw-70 bg-light text-dark" id="contact">
-            <div class="container-fluid">
-              
-                <form  action="https://formspree.io/f/mnqwlnab" method="POST">
-                    <div class="row">
-                  <div class="col-md-6 mb-3">
-                      <label for="name" class="form-label"
-                      ></label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="name"
-                      aria-describedby="emailHelp"
-                      required
-                    />
-                    <span class="floatlabel">Name *</span>
+            <!-- Testimonial -->
+            <section
+                class="min-vh-100 min-vw-70 bg-dark text-light"
+                id="testimonial"
+            >
+                <div class="container-fluid">fbvuisdiofbkhafvb</div>
+            </section>
+            <!-- Testimonial ends -->
+
+            <!-- Contact -->
+            <section class="min-vh-100 min-vw-70 bg-dark text-dark" id="contact">
+                <div class="container-fluid">
+                
+                    <form  action="https://formspree.io/f/mnqwlnab" method="POST" class="p-3">
+                        <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="name" class="form-label">Name *
+                        </label>    
+                        <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        aria-describedby="emailHelp"
+                        required
+                        />
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label"
+                        >Email Address *</label
+                        >
+                        <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        aria-describedby="emailHelp"
+                        required
+                        />
+                    </div>
                     </div>
 
-                    <div class="col-md-6 mb-3">
-                    <label for="email" class="form-label"
-                      ></label
-                    >
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="email"
-                      placeholder="Email address *"
-                      aria-describedby="emailHelp"
-                      required
-                    />
-                  </div>
-                  </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label"
+                        >Phone number</label
+                        >
+                        <input
+                        type="tel"
+                        class="form-control"
+                        id="phone"
+                        required
+                        />
+                    </div>
 
-                  <div class="mb-3">
-                    <label for="phone" class="form-label"
-                      ></label
-                    >
-                    <input
-                      type="tel"
-                      class="form-control"
-                      id="phone"
-                      placeholder="Phone Number"
-                      required
-                    />
-                  </div>
+                    <div class="mb-3">
+                        <textarea class="bg-transparent w-100" placeholder="Message" id="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn1 btn-dark w-100">SEND MESSAGE</button>
+                    </form>
+                
+            </section>
+            <!-- Contact ends -->
+            </div>
+            <!-- Main content ends -->
 
-                  <div class="mb-3">
-                    <textarea placeholder="Message" id="message" required></textarea>
-                  </div>
-                 
-                  <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+            <!-- Fixed content starts -->
+            <div class="fixed-content container-fluid col-md-4 border-start">
+                <!-- Offcanvas -->
+                <div class="d-flex flex-row justify-content-end align-items-end">
+                <span class="menu">
+                    Menu 
+                </span>
+            <button
+            class="offbutton"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasWithBothOptions"
+            aria-controls="offcanvasWithBothOptions"
+            >
+                <span class="icon">
+                    <i class='bx bx-menu'></i>
+                </span>
+            </button>
+            </div>
+            <div
+            class="offcanvas offcanvas-end"
+            data-bs-scroll="true"
+            tabindex="-1"
+            id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel"
+            >
             
-          </section>
-          <!-- Contact ends -->
+            <div class="offcanvas-header bg-dark">
+                <h5 class="offcanvas-title text-light" id="offcanvasWithBothOptionsLabel">
+                Menu
+                </h5>
+                <button
+                type="button"
+                class="close btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                ></button>
+            </div>
+            <div class="offcanvas-body bg-dark">
+                <div class="display-flex flex-column">
+                        <div class="nav-link">
+                            <a href="#landing">Home</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href="#about">About</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href="#portfolio">Portfolio</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href="#testimonial">Testimonial</a>
+                        </div>
+                        <div class="nav-link">
+                            <a href="#contact">Contact</a>
+                        </div>
+                   
+                </div>
+            </div>
+            </div>
+            <!-- Offcanvas end -->
+            <section class="min-vh-100 min-vw-30  d-flex justify-content-center align-items-center">
+                <div class="col-md-4">
+                    <img src="./images/Mika (2).JPG" class="male img-fluid">
+                </div>
+            </section>
+            </div>
         </div>
-        <!-- Main content ends -->
-
-        <!-- Fixed content starts -->
-        <div class="container-fluid col-md-6">
-          <section class="min-vh-100 min-vw-30">
-            <div class="col-md-6"></div>
-          </section>
-        </div>
-      </div>
+    </div>
       <!-- Fixed content ends -->
     </main>
     <script
