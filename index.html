@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Mock Portfolio</title>
   </head>
-  <body style="overflow-x: hidden" class="bg-dark">
+  <body style="overflow-x: hidden" class="">
     <main>
       <div class="container-fluid">
             <div class="row">
@@ -23,20 +23,71 @@
             <div class="col-md-8">
 
             <!-- Landing -->
-            <section class="min-vh-100 min-vw-70 bg-dark text-light" id="landing">
+            <section class="min-vh-100 min-vw-70 text-light" id="landing">
                 <div class="container-fluid">
-                <h3 class="subtitle">Introduction</h3>
-                <h3 class="title">Aspiring Full-Stack Developer</h3>
+                    <div class="d-flex flex-column justify-content-start align-items-start">
+                        <h3 class="subtitle">Introduction</h3>
+                        <h3 class="title"><span class="lb">Aspiring</span><span class="ps-3">Full-Stack Developer</span></h3>
+                        <p class="des">I am currently studying coding at Life Choices Academy.</p>
+                        <img src="./images/signature-removebg-preview.png" alt="Mika Rinquest">
+                    </div>
                 </div>
             </section>
             <!-- Landing ends -->
 
             <!-- About -->
-            <section class="min-vh-100 min-vw-70 bg-dark text-light" id="about">
-                <div class="container-fluid"></div>
+            <section class="min-vh-100 min-vw-70  text-light" id="about">
+                <div class="container-fluid">
+                    <div class="d-flex flex-column justify-content-start align-items-start">
+                        <h3 class="subtitle">About Me </h3>
+                        <h3 class="title"><span class="lb">Biography</span></h3>
+                        <p class="des">I am a quick learner that prefers to get things done as soon as possible. While I am an introvert with everyone except those I am comfortable with, I am always there to help when someone needs assistance. Occasionally, I enjoy hiking mountains but prefer the indoors. In the beginning, I became interested in Tech because when I would see a website or a game, I would wonder how much work or what exactly the team behind it did to make it happen. When I saw an advertisement for the internship at Life Choices Academy, I saw the opportunity to learn more about coding. 
+</p>
+<div class="d-flex">
+
+    <div class="d-inline">
+        <table>
+            <tr>
+                <th class="Heading">Name</th>
+                <th>Mika Rinquest</th>
+            </tr>
+            <tr>
+                <th class="Heading">Birthday</th>
+                <th>24 September 2003</th>
+            </tr>
+            <tr>
+                <th class="Heading">Age</th>
+                <th>18</th>
+            </tr>
+            <tr>
+                <th class="Heading">Address</th>
+                <th></th>
+            </tr>
+            <tr>
+                <th class="Heading">Phone</th>
+                <th>+27 81 707 9992</th>
+            </tr>
+            <tr>
+                <th class="Heading">Email</th>
+                <th>rinquestmika@gmail.com</th>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <a href="./images/signature-removebg-preview.png" download>
+            <div class="down">
+                <i class='bx bx-cloud-download'></i>
+                <p>Download cv</p>
+            </div>
+        </a>
+    </div>
+</div>
+                    </div>
+                </div>
             </section>
             <section
-                class="min-vh-100 min-vw-70 bg-light text-dark"
+                class="min-vh-100 min-vw-70  text-light"
                 id="portfolio"
             >
                 <div class="container-fluid">fbvuisdiofbkhafvb</div>
@@ -45,7 +96,7 @@
 
             <!-- Testimonial -->
             <section
-                class="min-vh-100 min-vw-70 bg-dark text-light"
+                class="min-vh-100 min-vw-70  text-light"
                 id="testimonial"
             >
                 <div class="container-fluid">fbvuisdiofbkhafvb</div>
@@ -53,7 +104,7 @@
             <!-- Testimonial ends -->
 
             <!-- Contact -->
-            <section class="min-vh-100 min-vw-70 bg-dark text-dark" id="contact">
+            <section class="min-vh-100 min-vw-70  text-dark" id="contact">
                 <div class="container-fluid">
                 
                     <form  action="https://formspree.io/f/mnqwlnab" method="POST" class="p-3">
@@ -100,7 +151,7 @@
                         <textarea class="bg-transparent w-100" placeholder="Message" id="message" required></textarea>
                     </div>
                     
-                    <button type="submit" class="btn1 btn-dark w-100">SEND MESSAGE</button>
+                    <button type="submit" class="btn1 w-100">SEND MESSAGE</button>
                     </form>
                 
             </section>
@@ -135,18 +186,22 @@
             aria-labelledby="offcanvasWithBothOptionsLabel"
             >
             
-            <div class="offcanvas-header bg-dark">
-                <h5 class="offcanvas-title text-light" id="offcanvasWithBothOptionsLabel">
-                Menu
-                </h5>
+            <div class="offcanvas-header">
+                <div class="offcanvas-header-title">
+                    <h3 class="offcanvas-title text-light" id="offcanvasWithBothOptionsLabel">
+                        MENU
+                        </h3>
+                </div>
+                <div class="offcanvas-header-btn">
                 <button
                 type="button"
                 class="close btn-close btn-close-white"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
                 ></button>
+                </div>
             </div>
-            <div class="offcanvas-body bg-dark">
+            <div class="offcanvas-body">
                 <div class="display-flex flex-column">
                         <div class="nav-link">
                             <a href="#landing">Home</a>
@@ -163,14 +218,21 @@
                         <div class="nav-link">
                             <a href="#contact">Contact</a>
                         </div>
-                   
+                   <div class="icon-holder">
+                       <a href="https://www.linkedin.com/in/mika-rinquest-975890237/"><i class='bx bxl-linkedin'></i></a>
+                       <a href="https://github.com/MikaRinquest"><i class='bx bxl-github' ></i></a>
+                   </div>
                 </div>
             </div>
             </div>
             <!-- Offcanvas end -->
-            <section class="min-vh-100 min-vw-30  d-flex justify-content-center align-items-center">
+            <section class="dock min-vh-100 min-vw-30  d-flex justify-content-center align-items-center">
                 <div class="col-md-4">
-                    <img src="./images/Mika (2).JPG" class="male img-fluid">
+                    <div class="border1">
+                        <div class="border2">
+                    <img src="./images/Mika (2).JPG" class="male ">
+                        </div>
+                    </div>
                 </div>
             </section>
             </div>
