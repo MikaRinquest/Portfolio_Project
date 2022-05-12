@@ -11,6 +11,21 @@
       crossorigin="anonymous"
     />
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>Mock Portfolio</title>
   </head>
@@ -99,14 +114,72 @@
   
 </ul>
 <div class="tab-content">
-    <div class="tab-item active pt-3" id="exp">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla incidunt eius ab, qui rem voluptas sed repellat laborum iusto, vitae optio harum corrupti sapiente consequatur distinctio eaque? Quo, ipsam! Officia?</p>
+    <div class="tab-pane active pt-3" id="exp">
+    <div class="info">
+        <div class="header">
+            <p>
+            <span>
+<h5>Life Choices Academy</h5>
+(2022)
+</span>
+</p>
+        </div>
+<h3>Intern</h3>
     </div>
-    <div class="tab-item" id="education">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla incidunt eius ab, qui rem voluptas sed repellat laborum iusto, vitae optio harum corrupti sapiente consequatur distinctio eaque? Quo, ipsam! Officia?</p>
     </div>
-    <div class="tab-item" id="skill">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla incidunt eius ab, qui rem voluptas sed repellat laborum iusto, vitae optio harum corrupti sapiente consequatur distinctio eaque? Quo, ipsam! Officia?</p>
+
+    <div class="tab-pane pt-3" id="education">
+    <div class="info">
+        <div class="header">
+            <p>
+                <span></span>
+<h5>Meridian Pinehurst</h5>
+(2017-2021)</span>
+</p>
+        </div>
+<h3>Student</h3>
+    </div>
+    </div>
+
+    <div class="tab-pane pt-3" id="skill">
+    <div class="info">
+       <div class="progress mt-3">
+  <div class="progress-bar" role="progressbar" aria-valuenow="99"
+  aria-valuemin="0" aria-valuemax="100" style="width:99%">
+    <span class="sr-only">70% </span>
+  </div>
+</div>
+       <div class="progress mt-3">
+  <div class="progress-bar" role="progressbar" aria-valuenow="83"
+  aria-valuemin="0" aria-valuemax="100" style="width:83%">
+    <span class="sr-only">70% </span>
+  </div>
+</div>
+       <div class="progress mt-3">
+  <div class="progress-bar" role="progressbar" aria-valuenow="87"
+  aria-valuemin="0" aria-valuemax="100" style="width:87%">
+    <span class="sr-only">70% </span>
+  </div>
+</div>
+       <div class="progress mt-3">
+  <div class="progress-bar" role="progressbar" aria-valuenow="83"
+  aria-valuemin="0" aria-valuemax="100" style="width:83%">
+    <span class="sr-only">70% </span>
+  </div>
+</div>
+       <div class="progress mt-3" style="height:10px;">
+  <div class="progress-bar" role="progressbar" aria-valuenow="65"
+  aria-valuemin="0" aria-valuemax="100" style="width:65%">
+    <span class="sr-only">70% </span>
+  </div>
+</div>
+       <div class="progress mt-3">
+  <div class="progress-bar" role="progressbar" aria-valuenow="71"
+  aria-valuemin="0" aria-valuemax="100" style="width:71%">
+    <span class="sr-only">70% </span>
+  </div>
+</div>
+    </div>
     </div>
 </div>
 
@@ -120,7 +193,148 @@
                 id="portfolio"
             >
                 <div class="container-fluid">
-                    
+                    <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#1st">
+    <img src="..." class="d-block " alt="...">
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="1st" tabindex="-1" aria-labelledby="1st" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn ">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class="carousel-item">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#2nd">
+    <img src="..." class="d-block " alt="...">
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="2nd" tabindex="-1" aria-labelledby="2nd" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn ">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class="carousel-item">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#2nd">
+    <img src="..." class="d-block " alt="...">
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="2nd" tabindex="-1" aria-labelledby="2nd" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn ">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class="carousel-item">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#3rd">
+    <img src="..." class="d-block " alt="...">
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="3rd" tabindex="-1" aria-labelledby="3rd" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn ">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class="carousel-item">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#4th">
+    <img src="..." class="d-block " alt="...">
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="4th" tabindex="-1" aria-labelledby="4th" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn ">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
                 </div>
             </section>
             <!-- Portfolio ends -->
@@ -130,7 +344,63 @@
                 class="min-vh-100 min-vw-70  text-light"
                 id="testimonial"
             >
-                <div class="container-fluid">fbvuisdiofbkhafvb</div>
+                <div class="container-fluid">
+                             <div id="test" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active ">
+        <div>
+        <p>Some representative placeholder content for the first slide.</p>
+        </div>
+        <h3>-Jason Wandrag</h3>
+        </div>
+
+    <div class="carousel-item ">
+        <div>
+        <p>He has an amazing work ethic, once he sets his mind on something he doesn't stop until it is done.</p>
+        </div>
+        <h3>Clayton Charles Adonis</h3>
+        </div>
+
+    <div class="carousel-item ">
+        <div>
+        <p>Mika is exceptional in the work he does, he is always willing to lend a helping hand. He is very passionate and will succeed in anything he does.</p>
+        </div>
+        <h3>Chanique Mansoor</h3>
+        </div>
+
+    <div class="carousel-item ">
+        <div>
+        <p>Mika is a fine young man, eloquent in his dealings and always willing to help others, quick and nimble in handling situations.</p>
+        </div>
+        <h3>Abdool Raaid Toorabally</h3>
+        </div>
+
+    <div class="carousel-item ">
+        <div>
+        <p>Some representative placeholder content for the first slide.</p>
+        </div>
+        <h3>Abu Bakr Khan</h3>
+        </div>
+
+    <div class="carousel-item ">
+        <div>
+        <p>Some representative placeholder content for the first slide.</p>
+        </div>
+        <h3>Isma'eel Adams</h3>
+        </div>
+
+  </div>
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#test" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#test" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+                </div>
             </section>
             <!-- Testimonial ends -->
 
@@ -147,6 +417,7 @@
                         type="text"
                         class="form-control"
                         id="name"
+                        name="name"
                         aria-describedby="emailHelp"
                         required
                         />
@@ -160,6 +431,7 @@
                         type="email"
                         class="form-control"
                         id="email"
+                        name="email"
                         aria-describedby="emailHelp"
                         required
                         />
@@ -174,6 +446,7 @@
                         type="tel"
                         class="form-control"
                         id="phone"
+                        name="phone"
                         required
                         />
                     </div>
@@ -250,8 +523,8 @@
                             <a href="#contact">Contact</a>
                         </div>
                    <div class="icon-holder">
-                       <a href="https://www.linkedin.com/in/mika-rinquest-975890237/"><i class='bx bxl-linkedin'></i></a>
-                       <a href="https://github.com/MikaRinquest"><i class='bx bxl-github' ></i></a>
+                       <a href="https://www.linkedin.com/in/mika-rinquest-975890237/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                       <a href="https://github.com/MikaRinquest" target="_blank"><i class='bx bxl-github'></i></a>
                    </div>
                 </div>
             </div>
@@ -276,5 +549,29 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+   <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+     <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          autoplay: true,
+          items: 4,
+          loop: true,
+        });
+      });
+    </script>
   </body>
 </html>
