@@ -91,20 +91,35 @@ th {
   color: #888;
 }
 
+.grey {
+  color: #888;
+}
+
+.progress {
+  background-color: #888;
+}
+
+.progress-bar {
+  background-color: #987750;
+}
+
 .down p {
   text-transform: uppercase;
   color: #888;
 }
 
 .info {
-  border: 1px solid #151412;
+  border: 1px solid #fff solid #151412;
   background-color: #151412;
   padding-left: 20px;
   padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
 }
 
 .nav-link {
   color: #888;
+  font-size: 24px;
 }
 
 .nav-link:hover {
@@ -112,13 +127,24 @@ th {
   background-color: transparent;
 }
 
-.nav-link:active {
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #987750;
   background-color: transparent;
+  text-decoration: underline;
 }
 
 /* Portfolio */
 
 /* Testimonial */
+
+.tev-body p {
+  font-size: 20px;
+  color: #888;
+}
+
+.tes-authour {
+}
 
 /* Contact */
 form {
@@ -150,7 +176,7 @@ form {
 }
 
 .btn1 {
-  border: 1px solid;
+  border: 1px solid #fff solid;
   background-color: #181715;
   border-color: #808080;
   transition: all 0.3s ease;
@@ -172,14 +198,13 @@ form {
 
 .border1 {
   width: 300px;
-  border: 1px solid;
+  border: 1px solid #fff solid;
   border-color: #dddddd;
 }
 
 .border2 {
   width: 300px;
-  height: 400px;
-  outline: 1px blueviolet;
+  outline: 1px solid #fff blueviolet;
   outline-style: solid;
   outline-offset: 25px;
 }
@@ -191,32 +216,27 @@ form {
 }
 
 .typing h3 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid white; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  padding-left: 60px;
+  word-break: break-all; /*So that the animation goes letter by letter instead of by word*/
+  height: 1.2em; /*How big the animation must be(smaller font means not the whole word is changed*/
+  width: 0%; /*How much of the target must display*/
+  overflow: hidden; /*Makes sure the content doesn't show before hand*/
+  animation-name: t, blink; /*Name that the keyframe can target*/
+  animation-duration: 2s; /*Length of the animation*/
+  animation-timing-function: linear; /*How each letter appears*/
+  animation-direction: alternate; /*Direction that the letters disappear*/
+  animation-iteration-count: infinite, infinite; /*Ensures that the animation is constantly looped*/
 }
 
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+.typing h3:before {
+  content: " ";
+  display: inline-block;
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: white;
+@keyframes t {
+  90%,
+  100% {
+    width: 100%; /*Shows how much space the target must take*/
   }
 }
 
@@ -228,7 +248,7 @@ form {
 }
 
 .border-start {
-  border-left: 1px solid #808080 !important;
+  border-left: 1px solid #fff solid #808080 !important;
 }
 
 .offbutton {
@@ -254,7 +274,7 @@ form {
   background-color: #151412;
   display: flex;
   flex-direction: column-reverse;
-  padding-bottom: 1px;
+  padding-bottom: 1px solid #fff;
 }
 
 .offcanvas-header-title {
@@ -276,7 +296,7 @@ form {
 
 .close:hover {
   font-size: 16px;
-  border: 1px solid;
+  border: 1px solid #fff solid;
   border-color: #987750;
   color: #987750;
 }
@@ -310,7 +330,7 @@ form {
 
 .icon-holder i {
   font-size: 18px;
-  border: 1px solid;
+  border: 1px solid #fff solid;
   border-color: rgba(255, 255, 255, 0.05);
   border-radius: 10%;
   width: 40px;
