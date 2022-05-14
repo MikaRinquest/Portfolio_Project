@@ -400,13 +400,13 @@ form {
 
 .border1 {
   width: 300px;
-  border: 1px solid #fff solid;
-  border-color: #dddddd;
+  border: 1px solid solid;
+  border-color: #888;
 }
 
 .border2 {
   width: 300px;
-  outline: 1px solid #fff blueviolet;
+  outline: 2px solid #888 ;
   outline-style: solid;
   outline-offset: 25px;
 }
