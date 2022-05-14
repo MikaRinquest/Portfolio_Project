@@ -31,6 +31,8 @@
     <title>Mock Portfolio</title>
   </head>
   <body style="overflow-x: hidden">
+  <div class="container-fluid">
+    <div class="row">
     <main>
        <!-- Offcanvas -->
        <div class="offbtn d-flex flex-row">
@@ -104,7 +106,7 @@
             <div class="col-md-8 col-sm-12">
 
             <!-- Landing -->
-            <section class="min-vh-100 min-vw-70 text-light" id="landing">
+            <section class="text-light" id="landing">
                 <div class="container-fluid">
                     <div class="d-flex flex-column justify-content-start align-items-start">
                         <h3 class="subtitle">Introduction</h3>
@@ -117,7 +119,7 @@
             <!-- Landing ends -->
 
             <!-- About -->
-            <section class="min-vh-100 min-vw-70  text-light" id="about">
+            <section class="text-light" id="about">
                 <div class="container-fluid">
                     <div class="d-flex flex-column justify-content-start align-items-start">
                         <h3 class="subtitle">About Me </h3>
@@ -126,7 +128,7 @@
 </p>
 <div class="d-flex">
 
-    <div data-aos="flip-left">
+    <div >
         <table>
             <tr>
                 <th class="Heading">Name</th>
@@ -142,7 +144,7 @@
             </tr>
             <tr>
                 <th class="Heading">Address</th>
-                <th></th>
+                <th>115 Shop Street, Abbotsdale</th>
             </tr>
             <tr>
                 <th class="Heading">Phone</th>
@@ -234,15 +236,7 @@
     </div>
     </div>
 
-    <!-- <div class="info mt-5">
-      <div class="row">
-        <div><i class='bx bx-chat'></i></div>
-        <div><i class="fa-solid fa-people-group"></i></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div> -->
+  
 </div>
 
 </div>  </div>
@@ -251,40 +245,32 @@
 
             <!-- Portfolio -->
             <section
-                class="min-vh-100 min-vw-70  text-light"
                 id="portfolio"
             >
                 <div class="container-fluid">
                    <h3 class="subtitle">Projects</h3>
                    <div class="row">
-                   <div class="item col-md-6">
-                     <img src="./images/calc.png" alt="">
-                     <div class="id">
-                       <a href="#"><i class='bx bxl-github'></i></a>
-                       <a href="#"><i class='bx bxl-netlify'></i></a>
-                     </div>
-                   </div>
-                   <div class="item col-md-6">
+                   <div class="item col-md-6 col-sm-12">
                      <img src="./images/hd.png" alt="">
                      <div class="id">
-                       <a href="#"><i class='bx bxl-github'></i></a>
-                       <a href="#"><i class='bx bxl-netlify'></i></a>
+                       <a href="https://github.com/MikaRinquest/holiday_destination.git" target="_blank"><i class='bx bxl-github'></i></a>
+                       <a href="https://luxury-crisp-0773c3.netlify.app" target="_blank"><i class='bx bxl-netlify'></i></a>
                      </div>
                    </div>
-                   <div class="item col-md-6">
-                     <img src="./images/initial portfolio.png" alt="">
+                   <div class="item col-md-6 col-sm-12">
+                     <img src="./images/initial portfolio.png" alt="" class="ip">
                      <div class="id">
-                       <a href="#"><i class='bx bxl-github'></i></a>
-                       <a href="#"><i class='bx bxl-netlify'></i></a>
+                       <a href="https://github.com/MikaRinquest/Mock-Portfolio.git" target="_blank"><i class='bx bxl-github'></i></a>
+                       <a href="https://relaxed-pie-a66d0f.netlify.app" target="_blank"><i class='bx bxl-netlify'></i></a>
                      </div>
                    </div>
-                   <div class="item col-md-6">
-                     <img src="./images/calc.png" alt="">
-                     <div class="id">
-                       <a href="#"><i class='bx bxl-github'></i></a>
-                       <a href="#"><i class='bx bxl-netlify'></i></a>
-                     </div>
-                   </div>
+                   <div class="item col-md-6 col-sm-12 pt-3">
+                    <img src="./images/calc.png" alt="">
+                    <div class="id">
+                      <a href="https://github.com/MikaRinquest/Calculator.git" target="_blank"><i class='bx bxl-github'></i></a>
+                      <a href="https://poetic-creponne-631b3b.netlify.app" target="_blank"><i class='bx bxl-netlify'></i></a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </section>
@@ -292,7 +278,6 @@
 
             <!-- Testimonial -->
             <section
-                class="min-vh-100 min-vw-70  text-light"
                 id="testimonial"
             >
 
@@ -420,16 +405,17 @@
             <!-- Testimonial ends -->
 
             <!-- Contact -->
-            <section class="min-vh-100 min-vw-70  text-dark" id="contact">
+            <section id="contact">
                 <div class="container-fluid">
                  <h3 class="subtitle">contact</h3>
                     <form  action="https://formspree.io/f/mnqwlnab" method="POST" class="p-3">
                         <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="name" class="form-label">Name *
+                    <div class="col-md-6 col-sm-12 mb-3">
+                        <label for="name" class="form-label">
                         </label>    
                         <input
                         type="text"
+                        placeholder="Name *"
                         class="form-control"
                         id="name"
                         name="name"
@@ -438,11 +424,12 @@
                         />
                         </div>
 
-                        <div class="col-md-6 mb-3">
+                        <div class="col-md-6 col-sm-12 mb-3">
                         <label for="email" class="form-label"
-                        >Email Address *</label
+                        ></label
                         >
                         <input
+                        placeholder="Email Address *"
                         type="email"
                         class="form-control"
                         id="email"
@@ -455,9 +442,10 @@
 
                     <div class="mb-3">
                         <label for="phone" class="form-label"
-                        >Phone number</label
+                        ></label
                         >
                         <input
+                        placeholder="Phone number"
                         type="tel"
                         class="form-control"
                         id="phone"
@@ -481,7 +469,7 @@
             <!-- Fixed content starts -->
             <div class="fixed-content container-fluid col-md-4 border-start">
                
-            <section class="dock min-vh-100 min-vw-30  d-flex justify-content-center align-items-center">
+            <section class="dock d-flex justify-content-center align-items-center">
                 <div class="col-md-4">
                     <div class="border1">
                         <div class="border2">
@@ -495,10 +483,10 @@
                 </div>
             </section>
             </div>
-        </div>
-    </div>
       <!-- Fixed content ends -->
     </main>
+    </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
