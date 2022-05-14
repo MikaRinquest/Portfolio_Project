@@ -50,6 +50,16 @@ body h5 {
   margin-left: 15px;
 }
 
+.offcanvas-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
 .offcanvas-header {
   background-color: #151412;
   display: flex;
@@ -275,7 +285,7 @@ th {
   padding: 30px;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   opacity: 0;
   transition: all 0.3s linear;
 }
